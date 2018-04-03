@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Speech Recognition on the Web - Mihai Cîrlănaru</title>
+    <title>Empowering Mobile Applications with Speech Recognition - Mihai Cîrlănaru</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/night.css">
@@ -28,7 +28,7 @@
 
 <!-- SLIDE 1 -->
 <section data-background-image="img/full-ink.jpg" data-transition="slide" data-state="intro">
-  <h2>Speech Recognition</h2>
+  <h2>Empowering Mobile Applications with</h2>
   <h3 class="title-main">
     <span class="voice-visualizer">
       <svg preserveAspectRatio="none" id="visualizer" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -46,7 +46,7 @@
         <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)" mask="url(#mask)"></rect>
       </svg>
     </span>
-    on the <span class="emphasize title-main__em">Web</span>
+    <span class="emphasize title-main__em">Speech Recognition</span>
   </h3>
   <div class="name">
     <div class="name-text">Mihai Cîrlănaru</div>
@@ -54,23 +54,26 @@
   </div>
   <div class="main">
     <div class="main-container">
-      <i class="conf-logo"></i>
+      <h1 class="conf-logo">CodeMobile</h1>
     </div>
   </div>
 
   <aside class="notes">
-    Thanks for having me here, first time I'm attending Frontend Conf -- actually first time in Switzerland --
-    and I'm very excited about being in front of you all.
+    Thanks for having me here, I'm very excited to be in front of you today.
+    While I am not a mobile developer by trade, I did have a few stints on Android development.
     <br><br>
-    For the next half an hour I will be talking to you about a topic I am quite passionate about, Speech Recognition.
-    <b>WHY</b> it's a such a big deal these days, <b>HOW</b> it works, and <b>HOW</b> to use it on the web
+    For the next 40min or so I will be talking to you about a topic I am quite passionate about, Speech Recognition.
+    <b>WHY</b> it's a such a big deal these days, <b>HOW</b> it works, and <b>HOW</b> to use it on mobile (Android and iOS)<br><br>
+    how many devs of each platform?
+    assume the rest are web developers
+    iPhone X is doing well as all iOS devs bought it to test/develop on the new form factor/layout.
   </aside>
 </section>
 
 <!-- SLIDE 2 -->
 <section data-background-image="img/hudl-bg.jpg" data-transition="zoom-in fade-out">
   <div class="name-text">Mihai Cîrlănaru</div>
-  <div class="name-sub">Software Development Lead</div>
+  <div class="name-sub">Senior Engineering Team Lead</div>
   <i class="hudl-logo"></i>
   <aside class="notes">
     First off, a bit about myself, my name is Mihai, almost did a PhD in NLP a few years back, but went to the
@@ -91,7 +94,7 @@
  <section data-background-image="img/title-slide-1.png" data-transition="slide">
    <p>&nbsp;</p>
    <aside class="notes">
-     Speech Recognigion has been around for decades (early 1950s) but because it is such a HARD problem (just think of
+     Speech Recognigion has been around for decades (early 1950s) but because it tackles such a HARD problem (just think of
      all the factors that play into it: accent, pronunciation, pitch, volume, and speed) it was mainly targetting
      highly specialized domains:<br>
      &nbsp;&nbsp;- speaker dependent: involves a training step where a user is asked to read some sentences -> fine tune<br>
@@ -102,7 +105,7 @@
  </section>
 
 <!-- SLIDE 3 -->
-<section data-background-image="img/siri.jpg" data-transition="slide">
+<section data-background-image="img/siri.jpg" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     <i>But then, technology caught up and starting with Apple's Siri in 2011 a wave a voice-enabled devices/personal
@@ -114,18 +117,18 @@
 </section>
 
 <!-- SLIDE 4 -->
-<section data-background-image="img/alexa-2.jpg" data-transition="slide">
+<section data-background-image="img/alexa-2.jpg" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     A few years later (2014), Amazon took the voice-enabled assistant to a whole new level, these black cylindrical
     speakers with the glowing blue LED ring quickly became the staple of home automation and pretty much
-    kick off a whole new market of IoT devices that can be controlled with one's voice.<br><br>
+    kicked off a whole new market of IoT devices that can be controlled with one's voice.<br><br>
     How many of you used Alexa so far?
   </aside>
 </section>
 
 <!-- SLIDE 5 -->
-<section data-background-image="img/google-home.webp" data-transition="slide">
+<section data-background-image="img/google-home.webp" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     While Google did have voice input for search, it was only in 2016 that they created their own clever home decoration
@@ -136,7 +139,7 @@
 </section>
 
 <!-- SLIDE 6 -->
-<section data-background-image="img/voice-speakers.png" data-transition="slide" data-background-transition="slide">
+<section data-background-image="img/voice-speakers.png" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     <i>And as it turns out, more and more of these voice-enabled devices are coming up soon</i><br>
@@ -146,27 +149,27 @@
 </section>
 
 <!-- SLIDE 7 -->
-<section data-background-image="img/voice-users.png" data-transition="slide" data-background-transition="slide">
+<section data-background-image="img/voice-users.png" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     <i>In the US alone</i> approx 55 million people use a voice enabled digital assistant,
-    with the trend is going upward.<br><br>
+    with the trend going upward.<br><br>
     But how come this exploded now?
   </aside>
 </section>
 
 <!-- SLIDE 8 -->
-<section data-background-image="img/voice-performance.png" data-transition="slide" data-background-transition="slide">
+<section data-background-image="img/voice-performance.png" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     Well, speech recognition got very GOOD these days -- in terms of numbers (and I'll explain these in a bit)
-    Google managed to improve their own speech recognizer's error rate from a 23% to 4.9% in a handful of years and
+    Google managed to improve their own speech recognizer's error rate from 23% to 4.9% in a handful of years and
     Baidu has currently knocked that out of the park with a 3.7% error rate achieved by its Deep Speech 2 system.
   </aside>
 </section>
 
 <!-- SLIDE 9 -->
-<section data-background-image="img/performance.png" data-transition="slide" data-background-transition="slide">
+<section data-background-image="img/performance.png" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     If you are wondering what this error rate actually means: it is the sum of all errors the system produces over
@@ -174,19 +177,19 @@
     <br><br>
     Then sure, you might say nice numbers and math, but what does that mean?
     It turns out speech recognition systems are so good that they can even beat humans to it.
-    And there's research to prove it -- a group from Stanford proved that
+    And there's research to prove it -- a group from Stanford…
   </aside>
 </section>
 
 <!-- SLIDE 10 -->
-<section data-background-image="img/voice-research.png" data-transition="slide" data-background-transition="slide">
+<section data-background-image="img/voice-research.png" data-transition="fade-out">
   <p>&nbsp;</p>
   <aside class="notes">
     A group from Stanford used the speech rec tech from Baidu (the 3.7% one from earlier) and tested it
-    vs people at transcribing speech -- and guess what it is better, 3x faster -- and if you check out the
+    vs people at transcribing speech -- and guess what? it is better, 3x faster -- and if you check out the
     research at that link you will also learn that it performs better in terms of correctness for mandarin.<br><br>
     And if you used one of these devices you will not be surprised at all by these results --
-    I personally have no idea how the app to set reminders or timers looks like, I just use Alexa or Siri.
+    I personally have no idea how the app to set reminders or timers looks like, I just use Siri or Alexa.
     <br><br>
     Now that we've seen how big of deal it is let's see how it works
   </aside>
@@ -232,8 +235,8 @@
   <aside class="notes">
     Using a series of models, the search space for a match is significantly reduced and thus recognition is made
     possible in a finite amount of time:<br>
-    - <b>acoustic model</b> contains acoustic properties for each distinct unit of sound (senone)
-    - <b>phonetic dictionary</b> provides information on how to pronounce each word
+    - <b>acoustic model</b> contains acoustic properties for each distinct unit of sound (senone)<br>
+    - <b>phonetic dictionary</b> provides information on how to pronounce each word<br>
     - <b>language model</b> is used to restrict word search
   </aside>
 </section>
@@ -253,8 +256,10 @@
   <p>&nbsp;</p>
   <aside class="notes">
     <i>Now that we got this out of the way, let's get to the fun part.</i>
-    And as every good talk should have a good story I'm going to tell you one about my experience with
-    Speech Recognition on the Web.
+    And as every good talk should have a good story I'm going to tell you the one about how I got involved with
+    Speech Recognition.<br><br>
+    I started playing around with speech recognition a few years back when I was studying about it for
+    my Masters degree and got this great opportunity…
   </aside>
 </section>
 
@@ -262,8 +267,8 @@
 <section data-background-image="img/longtimeago.png" data-transition="fade">
   <p>&nbsp;</p>
   <aside class="notes">
-    I started playing around with speech recognition a few years back when I was studying about it for
-    my Masters degree and got this great opportunity to put in practice what I learned about speech recognition
+    <i>I started playing around with speech recognition a few years back (5yr) when I was studying about it for
+    my Masters degree and got this great opportunity</i> to put in practice what I learned about speech recognition
     within the Research Team at this small little tech company in the Valley
   </aside>
 </section>
@@ -273,7 +278,7 @@
 <section data-background-image="img/mozilla.jpg" data-transition="fade">
   <i class="mozilla-logo"></i>
   <aside class="notes">
-    Within the Research Team at Mozilla, to build a speech recognition engine for the now defunct Firefox OS
+    <i>Within the Research Team at Mozilla,</i> to build a speech recognition engine for the now defunct Firefox OS
   </aside>
 </section>
 
@@ -282,7 +287,7 @@
   <aside class="notes">
     Mozilla’s mobile phone operating system built entirely using web technologies. RIP it was a great<br><br>
     Being a research project, the focus was more on exploring what is even possible in terms of speech recognition
-    for the web, rather than have something production ready.
+    on mobile (using web tech), rather than have something production ready.
   </aside>
 </section>
 
@@ -304,21 +309,223 @@
 </section>
 
 <!-- SLIDE 18 -->
-<section data-background-image="img/full-ink.jpg">
-  <div class="name-text">Web Speech API Spec</div>
-  <div class="name-sub emphasize">bit.ly/WebSpeechSpec</div>
-  <i class="spec hero-pic">&nbsp;</i>
+<section data-background-image="img/mobile-split-front.png" data-transition="fade">
   <aside class="notes">
-    Little did I know, around the same time, a team from Google were writing a spec for Web Speech APIs
-    -- defining JavaScript APIs that would allow developers to incorporate speech recognition into their web pages.
-    <br>About a year later, with Chrome v25, Web Speech APIs were out. Whereas Chrome had speech input capabilities
-    with x-webkit-speech attribute (now deprecated) to input fields since v11.
-    <br><br>
-    Ok, so let’s see how these APIs look like in practice
+    And while I was focusing on the wrong mobile platform, the big players were already playing around with Speech
+    Recognition to enhance the user experience of writing messages:<br><br>
+    Android - June 2010 (API level 8)<br>
+    iOS - 2011 keyboard dictation (iOS 5), API with iOS 10 (Sept 2016)<br><br>
+    To please everyone I went with this split screen approach, that allows you to see how both platforms do it.
   </aside>
 </section>
 
-<!-- SLIDE 19 -->
+<section data-background-image="img/mobile-split-content-small.png" data-transition="fade">
+  <h2 class="split-slide-title">Speech Recognition API</h2>
+  <div class="inner-container">
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/AndroidSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="java">
+// Speech Recognition package
+// on Android (API level 8+)
+import android.speech.*
+
+// Relevant class
+class SpeechRecognizer {}
+
+// Getting a recognizer
+myRecognizer = SpeechRecognizer
+  .createSpeechRecognizer(context)
+</code>
+</pre>
+  </div>
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/iOSSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="swift">
+// Speech Recognition framework
+// on iOS (10.0+)
+import Speech
+
+// Relevant class
+class SFSpeechRecognizer {}
+
+// Getting a recognizer
+myRecognizer = SFSpeechRecognizer()
+</code>
+</pre>
+</div></div>
+  <aside class="notes">
+    The relevant packages, class and how to instantiate one. Default uses the devices current locale.
+  </aside>
+</section>
+
+<section data-background-image="img/mobile-split-content-small.png" data-transition="fade">
+  <h2 class="split-slide-title">Permissions</h2>
+  <div class="inner-container">
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/AndroidSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="java">
+android.permission.RECORD_AUDIO
+
+// Required if performing recognition with
+// the cloud based service
+android.permission.INTERNET
+</code>
+</pre>
+  </div>
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/iOSSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="swift">
+// Relevent authStatus:
+//    .authorized
+//    .denied
+//    .restricted
+SFSpeechRecognizer.requestAuthorization() {
+  (authStatus) in …
+}
+</code>
+</pre>
+</div></div>
+  <aside class="notes">
+    Before starting any recognition you must ensure that the user has authorized it.
+  </aside>
+</section>
+
+<section data-background-image="img/mobile-split-content-small.png" data-transition="fade">
+  <h2 class="split-slide-title">Start Recognition</h2>
+  <div class="inner-container">
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/AndroidSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="java">
+// Requires a RecognizerIntent that
+// contains recognition parameters:
+// - ACTION_RECOGNIZE_SPEECH
+//   sets its action
+// - EXTRA_LANGUAGE_PREFERENCE
+//   language to recognize
+// …
+myRecognizer.startListening(intent)
+</code>
+</pre>
+  </div>
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/iOSSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="swift">
+// Needs a Speech Recognition request, can be
+// SFSpeechAudioBufferRecognitionRequest
+// for live audio (with AVAudioEngine) or
+// SFSpeechURLRecognitionRequest
+// for recognizing from file
+myRecognizer
+  .recognitionTask(with: request) {
+    (result, error) in …
+  }
+</code>
+</pre>
+</div></div>
+  <aside class="notes">
+    Android - The intent allows you to define the locale and other configuration settings (i.e. how many results to return).<br>
+    iOS - The completion handler can be called more than once as speech is recognized incrementally -- you can check with isFinal
+  </aside>
+</section>
+
+<section data-background-image="img/mobile-split-content-small.png" data-transition="fade">
+  <h2 class="split-slide-title">Get Recognition Results</h2>
+  <div class="inner-container">
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/AndroidSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="java">
+// Catch results with onActivityResult
+@Override
+protected void onActivityResult(
+  int requestCode, int resultCode,
+  Intent data
+) {
+  //…
+  switch (requestCode) {
+  case REQ_CODE_SPEECH_INPUT: {
+    if (resultCode == RESULT_OK && null != data) {
+      ArrayList<String> result = data
+        .getStringArrayListExtra(
+          RecognizerIntent.EXTRA_RESULTS
+        );
+      System.out.println(
+        result.get(0)
+      );
+    }
+//…
+</code>
+</pre>
+  </div>
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/iOSSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="swift">
+// Within recognitionTask handler
+guard let result = result else {
+  // Recognition failed
+  return
+}
+if result.isFinal {
+  // Print the recognized speech
+  print(result
+    .bestTranscription
+    .formattedString
+  )
+}
+</code>
+</pre>
+</div></div>
+  <aside class="notes">
+    Android - catch the results on the activity, check the intent<br>
+    iOS - within the completion handler
+  </aside>
+</section>
+
+<section data-background-image="img/mobile-split-content-small.png" data-transition="fade">
+  <h2 class="split-slide-title">Stop Recognition</h2>
+  <div class="inner-container">
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/AndroidSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="java">
+myRecognizer.stopListening()
+</code>
+</pre>
+  </div>
+  <div class="pane">
+    <div class="name-sub emphasize">bit.ly/iOSSpeechAPI</div>
+<pre>
+<code data-trim data-noescape class="swift">
+// Stop the speech recognition request
+// Also, don't forget about the AVAudioEngine
+// instance (if live audio was used)
+// …
+request.stop()
+</code>
+</pre>
+</div></div>
+  <aside class="notes">
+    Free up resources on close or cancel.<br>
+    Proverbial black and white difference between the too mobile platforms, there is the middle ground -- the web platform,
+    and there is an API for it.
+  </aside>
+</section>
+
+<section>
+<section data-background-image="img/mobile-split-html5.png" data-transition="fade">
+  <aside class="notes">
+    While the web is a bit slow to push standards around with so many browser vendors and so much fragmentation
+    (Hello Android), it is slowly catching up.
+  </aside>
+</section>
+
 <section data-background-image="img/full-ink.jpg">
   <div class="name-text">Web Speech API</div>
   <div class="name-sub emphasize">bit.ly/WebSpeechAPI</div>
@@ -341,7 +548,6 @@ if (!SpeechRecognition) {
   </aside>
 </section>
 
-<!-- SLIDE 20 -->
 <section data-background-image="img/full-ink.jpg">
   <div class="name-text">Speech Recognition Attributes</div>
   <div class="name-sub emphasize">bit.ly/WebSpeechAPI</div>
@@ -371,7 +577,6 @@ recognizer.maxAlternatives = 3;
   </aside>
 </section>
 
-<!-- SLIDE 21 -->
 <section data-background-image="img/full-ink.jpg">
   <div class="name-text">Speech Recognition Event Handlers</div>
   <div class="name-sub emphasize">bit.ly/WebSpeechAPI</div>
@@ -390,7 +595,6 @@ recognizer.onerror // When an error occurred
   </aside>
 </section>
 
-<!-- SLIDE 22 -->
 <section data-background-image="img/full-ink.jpg">
   <div class="name-text">Speech Recognition Control</div>
   <div class="name-sub emphasize">bit.ly/WebSpeechAPI</div>
@@ -440,7 +644,6 @@ recognizer.stop();
   </aside>
 </section>
 
-<!-- SLIDE 24 -->
 <section data-background-image="img/full-ink.jpg">
   <div class="name-text">Privacy</div>
   <div class="name-sub emphasize">bit.ly/WebSpeechAPI</div>
@@ -453,18 +656,46 @@ recognizer.stop();
   </aside>
 </section>
 
-<!-- SLIDE 25 -->
+</section>
+
 <section data-background-image="img/full-ink.jpg" data-transition="slide-in fade-out">
   <div class="name-text">Browser Support</div>
   <div class="name-sub emphasize">caniuse.com/#feat=speech-recognition</div>
   <i class="browser-support hero-pic">&nbsp;</i>
   <aside class="notes">
+    <i>While the web is a bit slow to push standards around with so many browser vendors and so much fragmentation
+    (Hello Android), it is slowly catching up.</i><br>
     As you can see support is not that great, it’s only Chrome and Opera that support it out of the box,
     whereas Firefox needs the webspeech recognition flag set. Microsoft is currently working on it for Edge.
     <br><br>
-    This image might look grim, but hey the global browser usage percentage is 60% and FF supports it behind a config flag
-    and this shouldn't discourage you from experimenting with new ways of improving UX using voice in your web apps.
-    And on that note,
+    And before you all fall asleep, I'm going to highlight some best practices around using Speech Recognition
+    on any platform.
+  </aside>
+</section>
+
+<section data-background-image="img/mobile-ux.png" data-transition="fade">
+  <div class="inner-container">
+    <div class="pane"></div>
+    <div class="pane">
+      <h2>Best practices</h2>
+      <ul class="list">
+        <li class="fragment fade-right">Handle <span class="emphasize">failures</span></li>
+        <li class="fragment fade-right">Plan for short recordings (<span class="emphasize">1 min limit</span>)</li>
+        <li class="fragment fade-right"><span class="emphasize">Remind the user</span> your app is recording</li>
+        <li class="fragment fade-up">Do <em>not</em> perform speech recognition on <span class="emphasize">private or sensitive information</span></li>
+      </div>
+    </ul>
+  </div>
+  <aside class="notes">
+    Be prepared to <b>handle the failures</b> that can be caused by reaching speech recognition limits. Because speech recognition is a network-based service, limits are enforced so that the service can remain freely available to all apps.
+    <br><br>
+    Plan for a <b>one-minute limit</b> on audio duration. Speech recognition can place a relatively high burden on battery life and network usage. In iOS 10, utterance audio duration is limited to about one minute, which is similar to the limit for keyboard-related dictation.
+    <br><br>
+    <b>Remind the user</b> when your app is recording. For example, you can play "now recording" sounds and display a visual indicator that helps users understand that they're being actively recorded. You can also display speech as it is being recognized so that users understand what your app is doing and when recognition errors occur.
+    <br><br>
+    Do not perform speech recognition on <b>private or sensitive information</b>. Some speech is simply not appropriate for recognition. Avoid sending passwords, health or financial data, and other sensitive speech for recognition.
+    <br><br>
+    And on that note…
   </aside>
 </section>
 
@@ -496,12 +727,12 @@ recognizer.stop();
   </div>
   <div class="main">
     <div class="main-container">
-      <i class="conf-logo-secondary"></i>
+      <h1 class="conf-logo-secondary">CodeMobile</h1>
     </div>
   </div>
   <aside class="notes">
-    Just imagine, how cool would it be to have live transcription of your talk using speech recognition, on the web
-    how crazy is that? Thank you
+    I hope you are as excited as I am about using Voice in your applications, chances are high we are experiencing
+    the next big user interaction paradigm - Thank you
   </aside>
 </section>
 
